@@ -76,11 +76,11 @@ killall yes
 
 
 ### CloudWatch Alarm
-![Alarm](screenshots/01_cloudwatch_cpu_alarm.png)
+![Alarm](screenshots/(01_cloudwatch_cpu_alarm).png)
 
 
 ### S3 Storage
-![S3](screenshots/(01_cloudwatch_cpu_alarm).png)
+![S3](screenshots/03_s3_bucket_storage.png)
 
 
 ### Web app running
