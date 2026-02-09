@@ -80,7 +80,7 @@ killall yes
 
 
 ### S3 Storage
-![S3](screenshots/03_s3_bucket_storage.png)
+![S3](screenshots/(01_cloudwatch_cpu_alarm).png)
 
 
 ### Web app running
