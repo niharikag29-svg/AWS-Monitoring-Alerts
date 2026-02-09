@@ -40,17 +40,17 @@ sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
 
-### 3️⃣ Deploy Web Page
+### 3️ Deploy Web Page
 cd /var/www/html
 sudo nano index.html
 Created login page and hosted it publicly.
 
-### 4️⃣ Create S3 Storage Bucket
+### 4️ Create S3 Storage Bucket
 aws s3 mb s3://niharika-web-storage
 aws s3 cp index.html s3://niharika-web-storage/
 Used for storing static files.
 
-### 5️⃣ Configure CloudWatch Monitoring
+### 5️ Configure CloudWatch Monitoring
 
 Monitored CPU utilization
 Created alarms for high CPU usageSet threshold alerts
@@ -58,18 +58,17 @@ Alarm Example:
 CPU > 70%
 1 minute interval
 
-### 6️⃣ Stress Test Monitoring
+### 6️ Stress Test Monitoring
 yes > /dev/null &
 yes > /dev/null &
 yes > /dev/null &
 yes > /dev/null &
 
 ### 7 To stop stress test
-
 killall yes
 
 ### Server commands
-![S3](screenshots/05_server_setup_commandse.png)
+![S3](screenshots/05_server_setup_commands.png)
 
 
 ### EC2 Instance Running
@@ -77,7 +76,7 @@ killall yes
 
 
 ### CloudWatch Alarm
-![Alarm](screenshots/(01_cloudwatch_cpu_alarm.png)
+![Alarm](screenshots/01_cloudwatch_cpu_alarm.png)
 
 
 ### S3 Storage
